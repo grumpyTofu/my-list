@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "name": "Debug UI",
+      "request": "launch",
+      "runtimeArgs": ["start"],
+      "runtimeExecutable": "yarn",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node",
+      "cwd": "${workspaceFolder}/client"
+    },
+    {
+      "name": "Debug API",
+      "request": "launch",
+      "runtimeArgs": ["start:debug"],
+      "runtimeExecutable": "yarn",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node",
+      "cwd": "${workspaceFolder}/server",
+      "console": "integratedTerminal"
+    }
+  ]
+}
